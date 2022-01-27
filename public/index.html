@@ -9,6 +9,12 @@
   <title>Netlify Proxy</title>
 </head>
 <body>
-  Your proxy runs on .... TODO
+  Your proxy runs on: <span id="url"></span>
+
+  https://agitated-davinci-648408.netlify.app/.netlify/functions/proxy
+
+  <script>
+    document.querySelector('#url').innerHTML = window.location.origin + '/.netlify/functions/proxy'
+  </script>
 </body>
 </html>
